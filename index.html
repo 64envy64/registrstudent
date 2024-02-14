@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section id="signin">
+      <div class="container">
+        <div class="signin-container">
+          <div class="signin-form">
+            <a href="index.html" class="logo">
+              <img src="images/logo.svg" alt="Logo" class="logo-img" />
+            </a>
+            <div class="form-container">
+              <h1 class="heading">Регистрация ученика</h1>
+              <p class="paragraph">
+                Пожалуйста, заполните данные ученика
+              </p>
+              <form class="signin_form">
+                <div class="input-form-container">
+                  <label for="email">Email</label>
+                  <div class="input-group">
+                    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please Enter Valid Email Id" required />
+                    <ion-icon name="close-circle-outline" class="email-clear"></ion-icon>
+                  </div>
+                </div>
+                <div class="input-form-container">
+                  <label for="name">Last name</label>
+                  <div class="input-group">
+                    <input type="text" name="name" id="name" required />
+                    <ion-icon name='happy-outline'></ion-icon>
+                  </div>
+                </div>
+                <div class="input-form-container">
+                  <label for="name">First name</label>
+                  <div class="input-group">
+                    <input type="text" name="name" id="name" required />
+                    <ion-icon name='happy-outline'></ion-icon>
+                  </div>
+                </div>
+                <div class="input-form-container">
+                  <label for="phone">Phone</label>
+                  <div class="input-group">
+                    <input type="tel" name="phone" id="phone" required />
+                    <ion-icon name='call-outline'></ion-icon>
+                  </div>
+                </div>
+                <div class="input-form-container">
+                  <label for="birth">Birth date</label>
+                  <div class="input-group">
+                    <input type="date" name="date" id="date" required />
+                  </div>
+                </div>
+                <div class="input-form-container">
+                  <label for="grade">Grade</label>
+                  <div class="input-group">
+                    <input type="grade" name="grade" id="grade" required />
+                  </div>
+                </div>
+                <div class="input-form-container">
+                  <label for="message">Message</label>
+                  <div class="input-group">
+                    <textarea name="message" id="message" rows="6" required></textarea>
+                  </div>
+                </div>
+
+                <div class="input-form-container">
+                  <button type="submit" class="btn btn-primary">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="signin-image">
+            <div class="img-container">
+              <img src="images/mock.png" alt="Main Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>
